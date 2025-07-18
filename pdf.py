@@ -1,10 +1,11 @@
 # pip install PyPDF2
 
 ''''
-from pypdf import PdfReader, PdfWriter
-writer = PdfWriter()
+example from a youtube
+from PYPDF2 import PdfFileWriter ,PdfFileReader
+writer = PdfFileWriter()
 file = 'test_file.pdf'
-reader = PdfReader(file)
+reader = PdffileReader(file)
 for page in range(reader.numPages):
     writer.addPage(reader.getPage(page))
 writer.encrypt('Password')
